@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="login.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <h1 class="login-header">Login</h1>
+    <form class="login-form" id="login-form" method="post">
+      <input type="text" name="username" id="username" class="login-form-field" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Username" required  title="Enter the email address">
+      <input type="password" name="password" id="password" pattern="^.{6,10}$" class="login-form-field" placeholder="Password"  title="Must contain 6-10 characters" required>
+      <button type="submit" class="login-form-btn"  id="login-form-submit" onclick="validate()"> Login</button>
+    </form>
+  </div>
+</body>
+
+</html>
